@@ -1,0 +1,94 @@
+body {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  background: #F2F1F0;
+  position: relative;
+}
+
+ul {
+  margin: 42px 0 0 0;
+  padding: 0;
+  border-bottom: 2px solid #9C27B0;
+}
+
+input {
+  width: 100%;
+  font-size: 18px;
+  border: 2px solid #9C27B0;
+  border-bottom: none;
+  padding: 10px 15px 10px 10%;
+  background: white url(search.svg) no-repeat 3% 45%;
+  color: #757575;
+  display: block;
+  position: fixed;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  box-shadow: 0 2px 0 0px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  height: 24px;
+  min-width: 24px;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin: 10px 10px 10px 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+li {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 10px;
+  background: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-left: 2px solid #9C27B0;
+  border-right: 2px solid #9C27B0;
+  transition: background .2s ease-in-out, height .3s;
+  font-weight: bold;
+  color: #757575;
+  box-shadow: inset 1px 1px 1px #F3E5F5;
+}
+
+li.active {
+  background: #F3E5F5;
+}
+
+li.active button {
+  opacity: 1;
+  transform: scale(1);
+}
+
+button:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  background: #BA68C8;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: #9C27B0;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  width: 31px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity .2s, transform .3s, background .3s, box-shadow .3s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  outline: none;
+}
